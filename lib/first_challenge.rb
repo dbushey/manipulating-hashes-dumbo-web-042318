@@ -16,9 +16,6 @@ def first_challenge
   contacts.each do |person, data|
     if person == "Freddy Mercury"
 
-      a = [ "a", "b", "c" ]
-      a.delete_if {|x| x >= "b" }   #=> ["a"]
-
       data.each do |attribute, value|
         if attribute == :favorite_icecream_flavors
           value.delete_if {|x| x== "strawberry"}
